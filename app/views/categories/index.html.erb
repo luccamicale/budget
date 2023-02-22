@@ -1,7 +1,7 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Categories</h1>
-
+<h1 class='title-categories'>Categories</h1>
+<h3 class='new-category'><%= link_to "New category", new_category_path %></h3>
 <div id="categories">
   <% @categories.each do |category| %>
     <%= render category %>
@@ -11,4 +11,3 @@
   <% end %>
 </div>
 
-<%= link_to "New category", new_category_path %>
