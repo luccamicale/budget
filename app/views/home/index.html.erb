@@ -1,0 +1,14 @@
+<section>
+    <h2>Welcome to the world of Tennis</h2>
+    <h3>Please select a option in Menu</h3>
+    <div>
+      <% if user_signed_in? %>
+        <a href='/categories'>Start to navigate for our website!!!</a>
+    <% else %>
+        <div class='container-login-signup'>
+          <div class='main-login'><a class='login-sign' href='/users/sign_in'>Log in</a></div>
+          <div class='main-login'><a class='login-sign' href='/users/sign_up'>Sign up</a></div>
+        </div>
+      <%end%>
+    </div>
+</section>

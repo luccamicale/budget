@@ -11,6 +11,23 @@
   </head>
 
   <body>
-    <%= yield %>
+    <section class='navbar'>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+      <div class='container-navbar'>
+        <div class='title-main'>
+          <h1 class='tennis-shop'>Tennis Shop RF Argentina</h1>
+        </div>
+        <div class='nav'>
+          <% if user_signed_in? %>
+          <a href='/'></a>
+          <a href='/categories'>Categories</a>
+          <a href='/payments'>Payments</a>
+          <%= link_to "Sign out", edit_user_registration_path, method: :delete %>
+        <% end %>
+        </div>
+      </div>
+      <%= yield %>
+    </section>
   </body>
 </html>
