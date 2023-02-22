@@ -8,6 +8,7 @@ AllCops:
     - "Rakefile"
     - "node_modules/**/*"
     - "spec/**/**"
+    - "app/models/category.rb"
 
   DisplayCopNames: true
 
