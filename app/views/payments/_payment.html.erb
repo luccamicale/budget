@@ -11,12 +11,12 @@
 
   <p>
     <strong>User:</strong>
-    <%= payment.user_id %>
+    Created by <%= payment.user.name %> <%= time_ago_in_words(payment.created_at) %> ago
   </p>
 
   <p>
     <strong>Category:</strong>
-    <%= payment.category_id %>
+    <%= Category.find(payment.category_id).name %>
   </p>
 
 </div>

@@ -1,13 +1,15 @@
 <p style="color: green"><%= notice %></p>
 
-<h1 class='title-categories'>Categories</h1>
-<h3 class='new-category'><%= link_to "New category", new_category_path %></h3>
-<div id="categories">
-  <% @categories.each do |category| %>
-    <%= render category %>
-  <p class='details-category'>
-    <%= link_to "Show this category", category %>
-  </p>
-  <% end %>
+<div class='container-amount'>
+  <h1 class='title-categories'>Categories</h1>
+  <p class='total-amount'> Total Amount $<%= Category.total_amount(@categories) %></p>
 </div>
-
+<h3 class='new-category'><%= link_to "New category", new_category_path %></h3>
+<div class="categories">
+  <% @categories.each do |category| %>
+  <div class='category-render'>
+    <%= render category %>
+      <%= link_to "Details category", category %>
+      </div>
+      <% end %>
+</div>

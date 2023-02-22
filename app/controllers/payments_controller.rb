@@ -5,7 +5,7 @@ class PaymentsController < ApplicationController
 
   # GET /payments or /payments.json
   def index
-    @payments = Payment.all
+    @payments = Payment.where(user_id: current_user.id)
   end
 
   # GET /payments/1 or /payments/1.json

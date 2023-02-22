@@ -4,12 +4,10 @@
     <%= category.name %>
   </p>
   <p>
-    <strong>Icon:</strong>
+    <strong></strong>
     <img src="<%= category.icon %>">
   </p>
   <p>
-    <strong>User:</strong>
-    <%= category.user_id %>
+    Created by <%= category.user.name %> <%= time_ago_in_words(category.created_at) %> ago
   </p>
 </div>
-

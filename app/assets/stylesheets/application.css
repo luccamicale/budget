@@ -1,7 +1,6 @@
 a {
   text-decoration: none;
   color: rgb(192, 187, 139);
-  width: 30%;
   margin-left: 35px;
 }
 
@@ -53,19 +52,40 @@ a:hover {
   width: 40%;
 }
 
-#categories {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  height: 40%;
-  background-color: aliceblue;
-}
-
 .title-categories {
   color: #3778c2;
+  margin-left: 5%;
 }
 
 .new-category {
   color: #3778c2;
   margin-left: 40%;
+}
+
+.container-amount {
+  display: flex;
+  flex-direction: row;
+}
+
+.total-amount {
+  margin-top: 25px;
+  margin-left: 65%;
+}
+
+.category-render {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  padding-right: 5%;
+  margin-right: 5%;
+  margin-top: 3%;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
 }
