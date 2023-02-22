@@ -1,6 +1,6 @@
 a {
   text-decoration: none;
-  color: lemonchiffon;
+  color: rgb(192, 187, 139);
   width: 30%;
   margin-left: 35px;
 }
@@ -26,4 +26,23 @@ a:hover {
   color: whitesmoke;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-left: 15px;
+}
+
+.login-sign {
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+}
+
+.container-login-signup {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-login {
+  border: 2px solid black;
+  width: 50%;
+  margin-top: 5%;
+  text-align: center;
+  margin-left: 20%;
+  border-radius: 6px;
 }
