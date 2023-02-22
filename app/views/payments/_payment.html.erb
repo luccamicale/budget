@@ -11,7 +11,7 @@
 
   <p>
     <strong>User:</strong>
-    <%= payment.user_id %>
+    Created by <%= payment.user.name %> <%= time_ago_in_words(payment.created_at) %> ago
   </p>
 
   <p>
