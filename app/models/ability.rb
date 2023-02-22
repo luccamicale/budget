@@ -5,8 +5,9 @@ class Ability
     if user.admin?
       can :manage, :all
     else
-      cannot :read, Category, hidden: true
-      cannot :read, Payment, hidden: true
+      can :manage, Category, user_id: user.id
+      can :manage, Payment, user_id: user.id
+      can :read, :all
     end
   end
 end
