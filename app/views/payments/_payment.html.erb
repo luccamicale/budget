@@ -16,7 +16,7 @@
 
   <p>
     <strong>Category:</strong>
-    <%= payment.category_id %>
+    <%= Category.find(payment.category_id).name %>
   </p>
 
 </div>
