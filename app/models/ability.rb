@@ -9,6 +9,7 @@ class Ability
       can :manage, :all
     else
       can :manage, Category, user_id: user.id
+      can :manage, Payment, user_id: user.id
       can :read, :all
     end
   end
