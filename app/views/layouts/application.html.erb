@@ -23,7 +23,7 @@
           <a href='/'></a>
           <a href='/categories'>Categories</a>
           <a href='/payments'>Payments</a>
-          <%= button_to 'Log out', destroy_user_session_path, method: :delete %>
+          <div class='logout-button'><%= button_to 'Log out', destroy_user_session_path, method: :delete %></div>
         <% end %>
         </div>
       </div>

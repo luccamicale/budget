@@ -46,3 +46,16 @@ a:hover {
   margin-left: 20%;
   border-radius: 6px;
 }
+
+.logout-button {
+  margin-left: 150%;
+  margin-top: -20px;
+  width: 40%;
+}
+
+#categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 40%;
+}

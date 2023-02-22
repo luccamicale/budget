@@ -5,9 +5,9 @@
 <div id="categories">
   <% @categories.each do |category| %>
     <%= render category %>
-    <p>
-      <%= link_to "Show this category", category %>
-    </p>
+  <p class='details-category'>
+    <%= link_to "Show this category", category %>
+  </p>
   <% end %>
 </div>
 
