@@ -17,6 +17,7 @@ class CategoriesController < ApplicationController
   # GET /categories/new
   def new
     @category = Category.new
+    @user = current_user
   end
 
   # GET /categories/1/edit

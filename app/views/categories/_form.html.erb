@@ -23,7 +23,7 @@
 
   <div>
     <%= form.label :user_id, style: "display: block" %>
-    <%= form.text_field :user_id %>
+    <%= form.text_field :user_id, value: @user.id, readonly: true %>
   </div>
 
   <div>
