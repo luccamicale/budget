@@ -1,6 +1,6 @@
-<h2>Log in</h2>
+<h2 class='title-log'>Log in</h2>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+<div class='render-edit-log'><%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
@@ -22,5 +22,6 @@
     <%= f.submit "Log in" %>
   </div>
 <% end %>
+</div>
 
 <%= render "devise/shared/links" %>
