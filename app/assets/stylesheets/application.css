@@ -1,13 +1,11 @@
-a {
-  text-decoration: none;
-  color: rgb(192, 187, 139);
-  margin-left: 35px;
+body {
+  background-color: #f1f2f3;
+  font-family: 'proxima-nova, Times New Roman', Times, serif;
 }
 
-a:hover {
+a {
   text-decoration: none;
-  background-color: rgb(227, 245, 209);
-  color: rgb(105, 100, 255);
+  margin-left: 40px;
 }
 
 .container-navbar {
@@ -60,6 +58,8 @@ a:hover {
 .new-category {
   color: #3778c2;
   margin-left: 40%;
+  border: 2px solid #65c61f;
+  width: 200px;
 }
 
 .container-amount {
@@ -69,11 +69,11 @@ a:hover {
 
 .total-amount {
   margin-top: 25px;
-  margin-left: 65%;
+  margin-left: 35%;
+  color: #65c61f;
 }
 
 .category-render {
-  border: 2px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -88,4 +88,85 @@ a:hover {
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
+  border: 2px solid #3778c2;
+}
+
+.container-show-categories {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  margin-left: 40px;
+}
+
+.item-categories {
+  background-color: #65c61f;
+  height: 40px;
+  margin-top: 5px;
+  padding-top: 5px;
+}
+
+.item-but-destroy {
+  margin-top: 8px;
+  margin-left: 40px;
+}
+
+.render-cat {
+  margin-left: 40px;
+}
+
+.render-edit {
+  border: 3px solid #3778c2;
+  text-align: center;
+}
+
+.container-show-back {
+  border: 1px solid #3778c2;
+  background-color: #65c61f;
+  height: 30px;
+}
+
+.title-edit {
+  margin-left: 40px;
+  color: #3778c2;
+}
+
+.container-payment {
+  border: 3px solid #3778c2;
+  text-align: center;
+  height: 450px;
+}
+
+.edit-payment {
+  border: 1px solid #3778c2;
+  background-color: #65c61f;
+  height: 30px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.inside-box-cont {
+  border: 2px solid #65c61f;
+  margin: 15px;
+}
+
+.cont-price-name {
+  display: flex;
+  flex-direction: row;
+}
+
+.amount-pay {
+  margin-left: 35px;
+}
+
+.destroy-but-pay {
+  margin-top: 15px;
+  margin-left: 110px;
+}
+
+.new-payment {
+  color: #3778c2;
+  margin: 25px;
+  margin-left: 150px;
+  border: 2px solid #65c61f;
+  width: 200px;
 }

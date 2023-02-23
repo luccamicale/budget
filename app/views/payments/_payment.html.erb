@@ -1,22 +1,28 @@
 <div id="<%= dom_id payment %>">
-  <p>
-    <strong>Name:</strong>
-    <%= payment.name %>
-  </p>
+  <div class='container-payment'>
+    <div class='inside-box-cont'>
+      <div class='cont-price-name'>
+        <p>
+          <strong>Name:</strong>
+            <%= payment.name %>
+          </p>
 
-  <p>
-    <strong>Amount:</strong>
-    <%= payment.amount %>
-  </p>
+          <p class='amount-pay'>
+            <strong>$</strong>
+            <%= payment.amount %>
+          </p>
+      </div>
 
-  <p>
-    <strong>User:</strong>
-    Created by <%= payment.user.name %> <%= time_ago_in_words(payment.created_at) %> ago
-  </p>
+      <p>
+        <strong>User:</strong>
+        Created by <%= payment.user.name %> <%= time_ago_in_words(payment.created_at) %> ago
+      </p>
 
-  <p>
-    <strong>Category:</strong>
-    <%= Category.find(payment.category_id).name %>
-  </p>
+      <p>
+        <strong>Category:</strong>
+        <%= Category.find(payment.category_id).name %>
+      </p>
+    </div>
+  </div>
 
 </div>

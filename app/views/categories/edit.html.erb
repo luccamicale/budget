@@ -1,10 +1,10 @@
-<h1>Editing category</h1>
+<h1 class='title-edit'>Editing category</h1>
 
-<%= render "form", category: @category %>
+<div class='render-edit'><%= render "form", category: @category %></div>
 
 <br>
 
-<div>
+<div class='container-show-back'>
   <%= link_to "Show this category", @category %> |
   <%= link_to "Back to categories", categories_path %>
 </div>
