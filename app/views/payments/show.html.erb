@@ -5,6 +5,7 @@
     <%= link_to "Edit this payment", edit_payment_path(@payment) %>
   <% end %></div>
   <div class='edit-payment'><%= link_to "Back to payments", payments_path %></div>
+  <div class='edit-payment'><a href='/categories'>Back to Home</div>
   <div class='destroy-but-pay'><% if can? :destroy, @payment%>
     <%= button_to "Destroy this payment", @payment, method: :delete %>
   <% end %></div>
