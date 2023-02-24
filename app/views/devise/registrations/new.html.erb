@@ -1,35 +1,33 @@
-<h2 class='title-sign'>Sign up</h2>
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { class: 'form-signin' }) do |f| %>
+<nav class="navbar text-light nav-mobile p-2">
+  <div class="d-flex justify-content-between w-100 align-items-center">
+    <%= f.submit "Sign up", class: "btn btn-lg btn-primary align-self-between" %>
+  </div>
+</nav>
 
-<div class='render-edit'><%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
-   <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
+  <div class="form-group">
+    <%= f.file_field :avatar %>
   </div>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  <div class="form-group">
+    <%= f.text_field :name, autocomplete: "name", placeholder: 'Full name', class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
+  <div class="form-group">
+    <%= f.email_field :email, placeholder: 'Email', class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+  <div class="form-group">
+    <%= f.password_field :password, autocomplete: "new-password", placeholder: 'Password 6 characters minimum', class: "form-control" %>
   </div>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
+  <div class="form-group">
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: 'Confirm Password', class: "form-control" %>
   </div>
+
+
 <% end %>
-</div>
 
 <%= render "devise/shared/links" %>

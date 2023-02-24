@@ -1,41 +1,15 @@
-body {
-  background-color: #fff;
-  font-family: 'proxima-nova, Times New Roman', Times, serif;
-}
-
 a {
   text-decoration: none;
 }
 
-li {
-  list-style-type: none;
-}
-
-.container-navbar {
-  display: flex;
-  flex-direction: row;
-  background-color: #3778c2;
-}
-
-.nav {
-  margin-left: 40%;
-  margin-top: 1.7%;
-}
-
-.tennis-shop {
-  color: whitesmoke;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-left: 15px;
-}
-
 .login-sign {
-  color: rgb(0, 0, 0);
-  font-size: 25px;
+  color: rgb(128, 128, 128);
+  font-size: 20px;
   text-align: center;
 }
 
 .login-sign-log {
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
   color: #f1f2f3;
 }
@@ -43,11 +17,11 @@ li {
 .main-login-log {
   background-color: #3778c2;
   border: 2px solid #3778c2;
-  width: 50%;
+  width: 80%;
   margin-top: 5%;
   text-align: center;
-  margin-left: 20%;
-  border-radius: 2px;
+  margin-left: 12%;
+  border-radius: 8px;
 }
 
 .container-login-signup {
@@ -61,224 +35,22 @@ li {
   width: 50%;
   margin-top: 5%;
   text-align: center;
-  margin-left: 20%;
+  margin-left: 27%;
   border-radius: 2px;
+  color: darkslategray;
 }
 
-.logout-button {
-  margin-left: 150%;
-  margin-top: -20px;
-  width: 40%;
+.button-app {
+  margin-left: 25%;
 }
 
-.title-categories {
-  color: #3778c2;
-  margin-left: 5%;
-}
-
-.new-category {
-  color: #3778c2;
-  margin-left: 40%;
-  border: 2px solid #65c61f;
-  width: 200px;
-  text-align: center;
-}
-
-.container-amount {
-  display: flex;
-  flex-direction: row;
-}
-
-.total-amount {
-  margin-top: 25px;
-  margin-left: 35%;
-  color: #65c61f;
-}
-
-.category-render {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: auto;
-  padding-right: 5%;
-  margin-right: 5%;
-  margin-top: 3%;
-}
-
-.categories {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-  border: 3px solid #3778c2;
-}
-
-.container-show-categories {
-  display: flex;
-  flex-direction: column;
-  width: 240px;
-  margin-left: 40px;
-}
-
-.item-categories {
-  background-color: #65c61f;
-  height: 40px;
-  margin-top: 5px;
-  padding-top: 5px;
-}
-
-.item-but-destroy {
-  margin-top: 8px;
-  margin-left: 40px;
-}
-
-.render-cat {
-  margin-left: 40px;
-}
-
-.render-edit {
-  border: 3px solid #3778c2;
-  text-align: center;
-}
-
-.container-show-back {
-  border: 1px solid #3778c2;
-  background-color: #65c61f;
-  height: 30px;
-}
-
-.title-edit {
-  margin-left: 40px;
-  color: #3778c2;
-}
-
-.container-payment {
-  border: 3px solid #3778c2;
-  text-align: center;
-  height: 450px;
-}
-
-.edit-payment {
-  border: 1px solid #3778c2;
-  background-color: #65c61f;
-  height: 30px;
-  margin-top: 10px;
-  text-align: center;
-}
-
-.inside-box-cont {
-  border: 2px solid #65c61f;
-  margin: 15px;
-}
-
-.cont-price-name {
-  display: flex;
-  flex-direction: row;
-}
-
-.amount-pay {
-  margin-left: 35px;
-}
-
-.destroy-but-pay {
-  margin-top: 15px;
-  margin-left: 110px;
-}
-
-.new-payment {
-  color: #3778c2;
-  margin: 25px;
-  margin-left: 150px;
-  border: 2px solid #65c61f;
-  width: 200px;
-  text-align: center;
-}
-
-.title-home {
-  color: #65c61f;
-  font-size: 25px;
-}
-
-.render-edit-log {
-  border: 3px solid #65c61f;
-  text-align: center;
-}
-
-.title-sign {
-  color: #65c61f;
-}
-
-.title-log {
-  color: #3778c2;
-}
-
-.button-logout {
-  margin-left: 45px;
-  margin-right: 500px;
-}
-
-.cont-names {
-  display: flex;
-  flex-direction: row;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-.link-catego {
-  margin-left: -60%;
-}
-
-.link-pay {
-  margin-left: 8%;
+.budget {
+  margin-left: 32%;
+  color: darkslategray;
 }
 
 .img-home {
   width: 75%;
   margin-left: 14%;
   margin-top: 15%;
-}
-
-.ball {
-  font-size: 25px;
-}
-
-.details-but {
-  border: 2px solid #65c61f;
-}
-
-@media screen and (min-width: 768px) {
-  .nav {
-    display: flex;
-  }
-
-  .img-menu {
-    display: none;
-  }
-
-  .manu-main {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .but-logout {
-    margin-left: 35px;
-  }
-
-  .cont-names {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .total-amount {
-    margin-left: 70%;
-  }
-
-  .img-home {
-    width: 45%;
-    margin-left: 26%;
-    margin-top: -3%;
-  }
 }

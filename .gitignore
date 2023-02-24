@@ -30,3 +30,4 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 node_modules/
+/public/assets/trix-ac629f94e04ee467ab73298a3496a4dfa33ca26a132f624dd5475381bc27bdc8.css/
