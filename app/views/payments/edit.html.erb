@@ -1,10 +1,10 @@
-<h1>Editing payment</h1>
+<h1 class='title-edit'>Editing payment</h1>
 
-<%= render "form", payment: @payment %>
+<div class='render-edit'><%= render "form", payment: @payment %></div>
 
 <br>
 
-<div>
+<div class='container-show-back'>
   <%= link_to "Show this payment", @payment %> |
   <%= link_to "Back to payments", payments_path %>
 </div>

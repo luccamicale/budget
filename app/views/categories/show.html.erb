@@ -1,15 +1,14 @@
 <p style="color: green"><%= notice %></p>
-<%= render @category %>
-<div>
-  <% if can? :update, @category %>
-    <%= link_to "Edit this category", edit_category_path(@category) %> | 
-  <% end %>
-  <%= link_to "Back to categories", categories_path %> | 
-  <% @payments.each do |payment| %>
+<div class='render-cat'><%= render @category %></div>
+<div class='container-show-categories'>
+  <div class='item-categories'><% if can? :update, @category %>
+    <%= link_to "Edit this category", edit_category_path(@category) %>
+  <% end %></div>
+  <div class='item-categories'><%= link_to "Back to categories", categories_path %></div>
+  <div class='item-categories'><% @payments.each do |payment| %>
     <%= link_to 'Payment', payment %>
-  <% end %>
-  <% if can? :destroy, @category %>
+  <% end %></div>
+  <div class='item-but-destroy'><% if can? :destroy, @category %>
     <%= button_to "Destroy this category", @category, method: :delete %>
-  <% end %>
+  <% end %></div>
 </div>
-

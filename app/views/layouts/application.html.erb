@@ -6,6 +6,8 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <!-- Proxima Nova reference. -->
+    <link href="https://use.typekit.net/emv3zbo.css" rel="stylesheet" crossorigin="anonymous">
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
@@ -21,9 +23,11 @@
         <div class='nav'>
           <% if user_signed_in? %>
           <a href='/'></a>
-          <a href='/categories'>Categories</a>
-          <a href='/payments'>Payments</a>
-          <div class='logout-button'><%= button_to 'Log out', destroy_user_session_path, method: :delete %></div>
+          <div class='cont-names'>
+            <a class='link-catego' href='/categories'>Categories</a>
+            <a class='link-pay' href='/payments'>Payments</a>
+          </div>
+          <p class='but-logout'><%= button_to 'Log out', destroy_user_session_path, method: :delete %></p>
         <% end %>
         </div>
       </div>

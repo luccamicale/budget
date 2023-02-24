@@ -1,6 +1,7 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Payments</h1>
+<h1 class='title-categories'>Payments</h1>
+<div class='new-payment'><%= link_to "New payment", new_payment_path %></div>
 
 <div id="payments">
   <% @payments.each do |payment| %>
@@ -10,5 +11,3 @@
     </p>
   <% end %>
 </div>
-
-<%= link_to "New payment", new_payment_path %>

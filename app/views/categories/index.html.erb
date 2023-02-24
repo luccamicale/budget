@@ -9,7 +9,7 @@
   <% @categories.each do |category| %>
   <div class='category-render'>
     <%= render category %>
-      <%= link_to "Details category", category %>
-      </div>
-      <% end %>
+    <p class='details-but'><%= link_to "Details category", category %></p>
+  </div>
+  <% end %>
 </div>
