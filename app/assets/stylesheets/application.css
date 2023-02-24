@@ -236,9 +236,9 @@ nav {
 }
 
 .img-home {
-  width: 45%;
-  margin-left: 26%;
-  margin-top: -0%;
+  width: 75%;
+  margin-left: 14%;
+  margin-top: 15%;
 }
 
 .ball {
@@ -274,5 +274,11 @@ nav {
 
   .total-amount {
     margin-left: 70%;
+  }
+
+  .img-home {
+    width: 45%;
+    margin-left: 26%;
+    margin-top: -3%;
   }
 }
