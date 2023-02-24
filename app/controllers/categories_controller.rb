@@ -1,5 +1,5 @@
 class CategoriesController < ApplicationController
-  load_and_authorize_resource
+  # load_and_authorize_resource
 
   before_action :set_category, only: %i[show edit update destroy]
 
