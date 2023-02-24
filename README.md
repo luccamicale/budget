@@ -100,7 +100,7 @@ To run tests, run the following command:
 
 You can deploy this project using:
 
-- COMING SOON
+- https://budgetapp-3t3q.onrender.com/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
