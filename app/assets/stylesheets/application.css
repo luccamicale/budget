@@ -255,4 +255,8 @@ nav {
     display: flex;
     justify-content: space-between;
   }
+
+  .total-amount {
+    margin-left: 70%;
+  }
 }
