@@ -5,7 +5,10 @@ body {
 
 a {
   text-decoration: none;
-  margin-left: 40px;
+}
+
+li {
+  list-style-type: none;
 }
 
 .container-navbar {
@@ -205,4 +208,51 @@ a {
 
 .title-log {
   color: #3778c2;
+}
+
+.button-logout {
+  margin-left: 45px;
+  margin-right: 500px;
+}
+
+.cont-names {
+  display: flex;
+  flex-direction: row;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link-catego {
+  margin-left: -60%;
+}
+
+.link-pay {
+  margin-left: 8%;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+  }
+
+  .img-menu {
+    display: none;
+  }
+
+  .manu-main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .but-logout {
+    margin-left: 35px;
+  }
+
+  .cont-names {
+    display: flex;
+    justify-content: space-between;
+  }
 }
