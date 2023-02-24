@@ -1,5 +1,5 @@
 body {
-  background-color: #f1f2f3;
+  background-color: #fff;
   font-family: 'proxima-nova, Times New Roman', Times, serif;
 }
 
@@ -81,6 +81,7 @@ li {
   margin-left: 40%;
   border: 2px solid #65c61f;
   width: 200px;
+  text-align: center;
 }
 
 .container-amount {
@@ -231,6 +232,20 @@ nav {
 
 .link-pay {
   margin-left: 8%;
+}
+
+.img-home {
+  width: 45%;
+  margin-left: 26%;
+  margin-top: -0%;
+}
+
+.ball {
+  font-size: 25px;
+}
+
+.details-but {
+  border: 2px solid #65c61f;
 }
 
 @media screen and (min-width: 768px) {
