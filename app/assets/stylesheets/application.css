@@ -1,5 +1,6 @@
 a {
   text-decoration: none;
+  color: #f1f2f3;
 }
 
 .login-sign {
@@ -59,4 +60,41 @@ a {
   display: flex;
   justify-content: space-between;
   margin-bottom: 35px;
+  margin-top: -40px;
+}
+
+.img-home-cat {
+  width: 80px;
+  margin-top: -100px;
+  margin-left: 41%;
+}
+
+.container-amount {
+  display: flex;
+  background: #3285e4;
+  margin-top: -25px;
+}
+
+.total-amount {
+  margin-left: 15%;
+  margin-top: 5px;
+  color: #f1f2f3;
+}
+
+.title-categories {
+  color: #f1f2f3;
+}
+
+.new-cat {
+  margin-left: 20%;
+}
+
+.card {
+  padding: 10%;
+  margin-top: 5%;
+}
+
+.btn.btn-primary.white {
+  margin-left: 23%;
+  margin-top: 5%;
 }

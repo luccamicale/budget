@@ -1,15 +1,19 @@
 <p style="color: green"><%= notice %></p>
-
+<div class='navbar'>
+        <a class='btn btn-secondary' class='link-catego' href='/categories'>Categories</a>
+        <a class='btn btn-secondary' href='/payments'>Payments</a>
+        <%= button_to 'Log out', destroy_user_session_path, class: 'btn btn-primary', method: :delete %>
+      </div>
 <div class='container-amount'>
   <h1 class='title-categories'>Categories</h1>
-  <p class='total-amount'> Total Amount $<%= Category.total_amount(@categories) %></p>
+  <p class='total-amount'> Total Amount $<%= Category.total_amount(@categories) %><i class="bi bi-shop"></i></p>
 </div>
-<h3 class='new-category'><%= link_to "New category", new_category_path %></h3>
 <div class="categories">
   <% @categories.each do |category| %>
-  <div class='category-render'>
+  <div class='card'>
     <%= render category %>
-    <p class='details-but'><%= link_to "Details category", category %></p>
+    <p class='btn btn-secondary'><%= link_to "Details category", category %></p>
   </div>
   <% end %>
+  <h3 class='btn btn-primary white'><%= link_to " Create a New category", new_category_path %></h3>
 </div>
