@@ -1,0 +1,23 @@
+<section>
+  <div>
+    <% if user_signed_in? %>
+      <a href='/'></a>
+      <div class='navbar'>
+        <%= button_to 'Log out', destroy_user_session_path, class: 'btn btn-primary', method: :delete %>
+      </div>
+    <% end %>
+  </div>
+  <h2 class='budget'>Budget App</h2>
+  <div>
+    <% if user_signed_in? %>
+      <a href='/categories'><img class='img-home' src='https://img.freepik.com/vector-premium/pelota-tenis-toque-acuarela-boceto-dibujado-mano-ilustracion-pinturas_291138-204.jpg?w=2000'></a>
+    <% else %>
+      <div class='container-login-signup'>
+        <div class='main-login-log'><a class='login-sign-log' href='/users/sign_in'>Log in</a></div>
+        <div class='main-login'><a class='login-sign' href='/users/sign_up'>Sign up</a></div>
+      </div>
+    <% end %>
+  </div>
+</section>
+
+

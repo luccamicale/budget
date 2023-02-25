@@ -1,0 +1,305 @@
+a {
+  text-decoration: none;
+  color: #f1f2f3;
+}
+
+.login-sign {
+  color: rgb(128, 128, 128);
+  font-size: 20px;
+  text-align: center;
+}
+
+.login-sign-log {
+  font-size: 20px;
+  text-align: center;
+  color: #f1f2f3;
+}
+
+.main-login-log {
+  background-color: #3778c2;
+  border: 2px solid #3778c2;
+  width: 80%;
+  margin-top: 5%;
+  text-align: center;
+  margin-left: 12%;
+  border-radius: 8px;
+}
+
+.container-login-signup {
+  display: flex;
+  flex-direction: column;
+  margin-top: 300px;
+}
+
+.main-login {
+  border: 2px solid rgb(255, 255, 255);
+  width: 50%;
+  margin-top: 5%;
+  text-align: center;
+  margin-left: 27%;
+  border-radius: 2px;
+  color: darkslategray;
+}
+
+.button-app {
+  margin-left: 25%;
+}
+
+.budget {
+  margin-left: 32%;
+  color: darkslategray;
+}
+
+.img-home {
+  width: 75%;
+  margin-left: 14%;
+  margin-top: 15%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+  margin-top: -40px;
+  background-color: #3778c2;
+}
+
+.img-home-cat {
+  width: 80px;
+  margin-top: -100px;
+  margin-left: 41%;
+}
+
+.container-amount {
+  display: flex;
+  background-color: #3778c2;
+  margin-top: -35px;
+}
+
+.total-amount {
+  margin-left: 60%;
+  margin-top: 5px;
+  color: #f1f2f3;
+}
+
+.title-categories {
+  color: #f1f2f3;
+  background-color: #3778c2;
+  margin-left: 30%;
+}
+
+.new-cat {
+  margin-left: 20%;
+}
+
+.card {
+  padding: 1%;
+  margin: 10px;
+  margin-top: 10px;
+}
+
+.btn.btn-primary.white {
+  margin-left: 23%;
+  margin-top: 5%;
+}
+
+/* .card.main {
+  background-color: rgb(244, 239, 232);
+  padding: 15px;
+} */
+
+.btn.btn-primary.red {
+  margin-top: 5%;
+  margin-left: 25%;
+}
+
+.btn.btn-success.green {
+  margin-top: 10px;
+}
+
+.btn.btn-success.greenn {
+  margin-top: 10px;
+}
+
+.cont-price-name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment {
+  margin-left: 31%;
+}
+
+.btn.btn-secondary.grey {
+  margin-top: 15px;
+  margin-left: 25%;
+}
+
+#category_name {
+  width: 90%;
+  border-radius: 6px;
+  margin-left: 5%;
+}
+
+#category_icon {
+  width: 90%;
+  border-radius: 6px;
+  margin-left: 5%;
+}
+
+#category_user_id {
+  width: 90%;
+  border-radius: 6px;
+  margin-left: 5%;
+}
+
+input.btn.btn-primary {
+  margin-top: 5%;
+  margin-left: 29%;
+}
+
+#payment_name {
+  width: 90%;
+  border-radius: 6px;
+  margin-left: 5%;
+}
+
+#payment_amount {
+  width: 90%;
+  border-radius: 6px;
+  margin-left: 5%;
+}
+
+#payment_user_id {
+  width: 90%;
+  border-radius: 6px;
+  margin-left: 5%;
+}
+
+#payment_category_id {
+  width: 90%;
+  border-radius: 6px;
+  margin-left: 5%;
+}
+
+.container-show-back {
+  margin-left: 5%;
+}
+
+a.btn.btn-secondary.btn-sm {
+  margin-top: 15px;
+}
+
+.a.btn.btn-success.btn-sm.log {
+  margin-top: 15px;
+}
+
+.nav-sign {
+  background-color: #3778c2;
+  width: 120%;
+  display: flex;
+  flex-direction: row;
+}
+
+input.btn.btn-primary.next {
+  margin-left: 20%;
+  background-color: #3778c2;
+  margin-bottom: 13px;
+}
+
+.img-arrow {
+  width: 40px;
+  height: 30px;
+  margin-top: 19px;
+}
+
+.register {
+  margin-left: 28%;
+  margin-top: 24px;
+}
+
+.forgot {
+  color: darkgray;
+  margin-left: 29%;
+}
+
+input.btn.btn-primary.next.log {
+  margin-left: 28%;
+}
+
+h3.btn.btn-primary.white {
+  background-color: #5fb523;
+  border-color: #fff;
+  border-radius: 1px;
+}
+
+.cont-h3-btn {
+  background-color: #5fb523;
+  border-color: #5fb523;
+}
+
+img.card-img-top {
+  width: 45%;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.cont-catgory {
+  display: flex;
+}
+
+.name-category {
+  font-size: 15px;
+}
+
+.p-img {
+  width: 100px;
+}
+
+.details-cat {
+  color: #3778c2;
+  margin-left: 120px;
+}
+
+.cont-name-user {
+  margin-top: 15px;
+}
+
+.gift-credit {
+  color: #f1f2f3;
+  margin-top: 5px;
+}
+
+.categories {
+  background-color: rgb(237, 237, 237);
+}
+
+.edit-payment {
+  margin-top: 10px;
+}
+
+.grey-but {
+  margin-left: 30%;
+  color: #3778c2;
+}
+
+.details-catt {
+  margin-left: 37%;
+}
+
+.img-user {
+  width: 50px;
+}
+
+.cont-user {
+  display: flex;
+}
+
+#user_avatar {
+  margin-top: 12px;
+  margin-left: 14px;
+}
+
+img.img-user {
+  margin: 5px;
+}

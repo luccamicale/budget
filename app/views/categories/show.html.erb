@@ -1,0 +1,21 @@
+<p style="color: green"><%= notice %></p>
+<div class='navbar'>
+        <h1 class='title-categories'>Categories</h1>
+        <%= button_to 'Log out', destroy_user_session_path, class: 'btn btn-primary', method: :delete %>
+      </div>
+<div class='card main'>
+  <h2 class='details-catt'>Details</h2>
+  <div class='card'><%= render @category %></div>
+</div>
+<div class='card'>
+  <div class='item-categories'><% if can? :update, @category %>
+    <%= link_to "Edit this category", edit_category_path(@category), class: 'btn btn-success greenn' %>
+  <% end %></div>
+  <div class='item-categories'><%= link_to "Back to categories", categories_path, class: 'btn btn-success green' %></div>
+  <div class='item-categories'><% @payments.each do |payment| %>
+    <%= link_to 'Payment', payment, class: 'btn btn-success green' %>
+  <% end %></div>
+  <div><% if can? :destroy, @category %>
+    <%= button_to "Destroy this category", @category, method: :delete, class: 'btn btn-primary red' %>
+  <% end %></div>
+</div>

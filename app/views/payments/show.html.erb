@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+<div class='navbar'>
+        <h1 class='title-categories'>Payments</h1>
+        <%= button_to 'Log out', destroy_user_session_path, class: 'btn btn-primary', method: :delete %>
+      </div>
+<%= render @payment %>
+<div class='card'>
+  <div class='edit-payment'><% if can? :update, @payment%>
+    <%= link_to "Edit this payment", edit_payment_path(@payment), class: 'btn btn-success greenn' %>
+  <% end %></div>
+  <div class='edit-payment'><%= link_to "Back to payments", payments_path, class: 'btn btn-success green' %></div>
+  <div class='btn btn-success green'><a href='/categories'>Back to Home</div>
+  <div class='destroy-but-pay'><% if can? :destroy, @payment%>
+    <%= button_to "Destroy this payment", @payment, method: :delete, class: 'btn btn-primary red' %>
+  <% end %></div>
+</div>

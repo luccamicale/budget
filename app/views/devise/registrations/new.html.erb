@@ -1,0 +1,33 @@
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { class: 'form-signin' }) do |f| %>
+<nav class="navbar text-light nav-mobile p-2">
+  <div class="nav-sign">
+    <a href='/'><img class='img-arrow' src='https://cdn-icons-png.flaticon.com/512/9622/9622757.png'></a>
+    <p class='register'>REGISTER</p>
+    <%= f.submit "Next", class: "btn btn-primary next " %>
+  </div>
+</nav>
+
+  <%= render "devise/shared/error_messages", resource: resource %>
+  <div class='cont-user'>
+    <img class='img-user' src='https://cdn-icons-png.flaticon.com/512/847/847969.png'>
+
+    <div class="form-group">
+    <%= f.file_field :avatar %>
+  </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.text_field :name, autocomplete: "name", placeholder: 'Full name', class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.email_field :email, placeholder: 'Email', class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.password_field :password, autocomplete: "new-password", placeholder: 'Password ', class: "form-control" %>
+  </div>
+
+
+<% end %>
+

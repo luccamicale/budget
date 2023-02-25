@@ -1,0 +1,28 @@
+<div id="<%= dom_id payment %>">
+  <div class='card main'>
+    <div class='card'>
+      <div class='cont-price-name'>
+        <p>
+          <strong>Name:</strong>
+            <%= payment.name %>
+          </p>
+
+          <p class='amount-pay'>
+            <strong>$</strong>
+            <%= payment.amount %>
+          </p>
+      </div>
+
+      <p>
+        <strong>User:</strong>
+        Created by <%= payment.user.name %> <%= time_ago_in_words(payment.created_at) %> ago
+      </p>
+
+      <p>
+        <strong>Category:</strong>
+        <%= Category.find(payment.category_id).name %>
+      </p>
+    </div>
+  </div>
+
+</div>
