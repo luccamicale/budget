@@ -83,6 +83,7 @@ a {
 
 .title-categories {
   color: #f1f2f3;
+  background-color: #3285e4;
 }
 
 .new-cat {
@@ -101,4 +102,82 @@ a {
 
 .card.main {
   background-color: rgb(244, 239, 232);
+}
+
+.btn.btn-primary.red {
+  margin-top: 5%;
+  margin-left: 25%;
+}
+
+.btn.btn-success.green {
+  margin-top: 10px;
+}
+
+.btn.btn-success.greenn {
+  margin-top: -10px;
+}
+
+.cont-price-name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment {
+  margin-left: 31%;
+}
+
+.btn.btn-secondary.grey {
+  margin-top: 15px;
+  margin-left: 25%;
+}
+
+#category_name {
+  width: 90%;
+  border-radius: 6px;
+  margin-left: 5%;
+}
+
+#category_icon {
+  width: 90%;
+  border-radius: 6px;
+  margin-left: 5%;
+}
+
+#category_user_id {
+  width: 90%;
+  border-radius: 6px;
+  margin-left: 5%;
+}
+
+input.btn.btn-primary {
+  margin-top: 5%;
+  margin-left: 29%;
+}
+
+#payment_name {
+  width: 90%;
+  border-radius: 6px;
+  margin-left: 5%;
+}
+
+#payment_amount {
+  width: 90%;
+  border-radius: 6px;
+  margin-left: 5%;
+}
+
+#payment_user_id {
+  width: 90%;
+  border-radius: 6px;
+  margin-left: 5%;
+}
+
+#payment_category_id {
+  width: 90%;
+  border-radius: 6px;
+  margin-left: 5%;
+}
+
+.container-show-back {
+  margin-left: 5%;
 }

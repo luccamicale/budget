@@ -1,3 +1,8 @@
+<div class='navbar'>
+        <a class='btn btn-secondary' class='link-catego' href='/categories'>Categories</a>
+        <a class='btn btn-secondary' href='/payments'>Payments</a>
+        <%= button_to 'Log out', destroy_user_session_path, class: 'btn btn-primary', method: :delete %>
+      </div>
 <h1 class='title-edit'>New payment</h1>
 
 <div class='render-edit'><%= render "form", payment: @payment %></div>
