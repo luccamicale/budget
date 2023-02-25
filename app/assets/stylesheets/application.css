@@ -54,3 +54,9 @@ a {
   margin-left: 14%;
   margin-top: 15%;
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
