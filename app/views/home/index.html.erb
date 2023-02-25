@@ -3,8 +3,6 @@
     <% if user_signed_in? %>
       <a href='/'></a>
       <div class='navbar'>
-        <a class='btn btn-secondary' class='link-catego' href='/categories'>Categories</a>
-        <a class='btn btn-secondary' href='/payments'>Payments</a>
         <%= button_to 'Log out', destroy_user_session_path, class: 'btn btn-primary', method: :delete %>
       </div>
     <% end %>

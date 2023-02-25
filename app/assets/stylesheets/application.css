@@ -61,6 +61,7 @@ a {
   justify-content: space-between;
   margin-bottom: 35px;
   margin-top: -40px;
+  background-color: #3778c2;
 }
 
 .img-home-cat {
@@ -71,19 +72,20 @@ a {
 
 .container-amount {
   display: flex;
-  background: #3285e4;
-  margin-top: -25px;
+  background-color: #3778c2;
+  margin-top: -35px;
 }
 
 .total-amount {
-  margin-left: 15%;
+  margin-left: 60%;
   margin-top: 5px;
   color: #f1f2f3;
 }
 
 .title-categories {
   color: #f1f2f3;
-  background-color: #3285e4;
+  background-color: #3778c2;
+  margin-left: 30%;
 }
 
 .new-cat {
@@ -91,8 +93,9 @@ a {
 }
 
 .card {
-  padding: 10%;
-  margin-top: 5%;
+  padding: 1%;
+  margin: 10px;
+  margin-top: 10px;
 }
 
 .btn.btn-primary.white {
@@ -100,9 +103,10 @@ a {
   margin-top: 5%;
 }
 
-.card.main {
+/* .card.main {
   background-color: rgb(244, 239, 232);
-}
+  padding: 15px;
+} */
 
 .btn.btn-primary.red {
   margin-top: 5%;
@@ -114,7 +118,7 @@ a {
 }
 
 .btn.btn-success.greenn {
-  margin-top: -10px;
+  margin-top: 10px;
 }
 
 .cont-price-name {
@@ -191,7 +195,7 @@ a.btn.btn-secondary.btn-sm {
 }
 
 .nav-sign {
-  background-color: #3285e4;
+  background-color: #3778c2;
   width: 120%;
   display: flex;
   flex-direction: row;
@@ -199,7 +203,7 @@ a.btn.btn-secondary.btn-sm {
 
 input.btn.btn-primary.next {
   margin-left: 20%;
-  background-color: #3285e4;
+  background-color: #3778c2;
   margin-bottom: 13px;
 }
 
@@ -221,4 +225,81 @@ input.btn.btn-primary.next {
 
 input.btn.btn-primary.next.log {
   margin-left: 28%;
+}
+
+h3.btn.btn-primary.white {
+  background-color: #5fb523;
+  border-color: #fff;
+  border-radius: 1px;
+}
+
+.cont-h3-btn {
+  background-color: #5fb523;
+  border-color: #5fb523;
+}
+
+img.card-img-top {
+  width: 45%;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.cont-catgory {
+  display: flex;
+}
+
+.name-category {
+  font-size: 15px;
+}
+
+.p-img {
+  width: 100px;
+}
+
+.details-cat {
+  color: #3778c2;
+  margin-left: 120px;
+}
+
+.cont-name-user {
+  margin-top: 15px;
+}
+
+.gift-credit {
+  color: #f1f2f3;
+  margin-top: 5px;
+}
+
+.categories {
+  background-color: rgb(237, 237, 237);
+}
+
+.edit-payment {
+  margin-top: 10px;
+}
+
+.grey-but {
+  margin-left: 30%;
+  color: #3778c2;
+}
+
+.details-catt {
+  margin-left: 37%;
+}
+
+.img-user {
+  width: 50px;
+}
+
+.cont-user {
+  display: flex;
+}
+
+#user_avatar {
+  margin-top: 12px;
+  margin-left: 14px;
+}
+
+img.img-user {
+  margin: 5px;
 }

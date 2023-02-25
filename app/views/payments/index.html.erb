@@ -1,16 +1,14 @@
 <p style="color: green"><%= notice %></p>
 <div class='navbar'>
-        <a class='btn btn-secondary' class='link-catego' href='/categories'>Categories</a>
-        <a class='btn btn-secondary' href='/payments'>Payments</a>
-        <%= button_to 'Log out', destroy_user_session_path, class: 'btn btn-primary grey', method: :delete %>
+        <h1 class='title-categories'>Payments</h1>
+        <%= button_to 'Log out', destroy_user_session_path, class: 'btn btn-primary', method: :delete %>
       </div>
-<h1 class='title-categories'>Payments</h1>
 <div id="payments">
   <% @payments.each do |payment| %>
     <%= render payment %>
     <p>
-      <%= link_to "Show this payment", payment, class: 'btn btn-secondary grey' %>
+      <%= link_to "Show this payment", payment, class: 'grey-but' %>
     </p>
   <% end %>
-  <div><%= link_to "Create a New payment", new_payment_path, class: 'btn btn-primary white' %></div>
+  <div class='cont-h3-btn'><h3 class='btn btn-primary white'><%= link_to " Create a New Payment", new_payment_path %></h3></div>
 </div>

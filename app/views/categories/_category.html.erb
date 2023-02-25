@@ -1,13 +1,19 @@
 <div id="<%= dom_id category %>">
-  <p>
-    <strong>Name:</strong>
-    <%= category.name %>
-  </p>
-  <p>
-    <strong></strong>
-    <img class='card-img-top' src="<%= category.icon %>">
-  </p>
-  <p>
-    Created by <%= category.user.name %> <%= time_ago_in_words(category.created_at) %> ago
-  </p>
+  <div class='cont-catgory'>
+    <div>
+      <p class='p-img'>
+      <strong></strong>
+      <img class='card-img-top' src="<%= category.icon %>">
+    </p>
+    </div>
+    <div class='cont-name-user'>
+      <p class='name-category'>
+        <strong></strong>
+        <%= category.name %>
+      </p>
+      <p>
+        By <%= category.user.name %> <%= time_ago_in_words(category.created_at) %> ago
+      </p>
+    </div>
+  </div>
 </div>

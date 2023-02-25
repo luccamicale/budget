@@ -50,7 +50,7 @@
 
 ## 🚀 [Live Demo Link](https://budgetapp-3t3q.onrender.com/) <a name="live-demo"></a>
 
-> Coming soon!.
+> https://budgetapp-3t3q.onrender.com/
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

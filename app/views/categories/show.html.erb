@@ -1,11 +1,10 @@
 <p style="color: green"><%= notice %></p>
 <div class='navbar'>
-        <a class='btn btn-secondary' class='link-catego' href='/categories'>Categories</a>
-        <a class='btn btn-secondary' href='/payments'>Payments</a>
+        <h1 class='title-categories'>Categories</h1>
         <%= button_to 'Log out', destroy_user_session_path, class: 'btn btn-primary', method: :delete %>
       </div>
 <div class='card main'>
-  <h2>Details</h2>
+  <h2 class='details-catt'>Details</h2>
   <div class='card'><%= render @category %></div>
 </div>
 <div class='card'>
