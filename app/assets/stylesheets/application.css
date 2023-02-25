@@ -181,3 +181,11 @@ input.btn.btn-primary {
 .container-show-back {
   margin-left: 5%;
 }
+
+a.btn.btn-secondary.btn-sm {
+  margin-top: 15px;
+}
+
+.a.btn.btn-success.btn-sm.log {
+  margin-top: 15px;
+}
