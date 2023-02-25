@@ -98,3 +98,7 @@ a {
   margin-left: 23%;
   margin-top: 5%;
 }
+
+.card.main {
+  background-color: rgb(244, 239, 232);
+}

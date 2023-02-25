@@ -10,9 +10,11 @@
 </div>
 <div class="categories">
   <% @categories.each do |category| %>
-  <div class='card'>
-    <%= render category %>
-    <p class='btn btn-secondary'><%= link_to "Details category", category %></p>
+  <div class='card main'>
+    <div class='card'>
+      <%= render category %>
+      <p class='btn btn-secondary'><%= link_to "Details category", category %></p>
+    </div>
   </div>
   <% end %>
   <h3 class='btn btn-primary white'><%= link_to " Create a New category", new_category_path %></h3>
