@@ -189,3 +189,36 @@ a.btn.btn-secondary.btn-sm {
 .a.btn.btn-success.btn-sm.log {
   margin-top: 15px;
 }
+
+.nav-sign {
+  background-color: #3285e4;
+  width: 120%;
+  display: flex;
+  flex-direction: row;
+}
+
+input.btn.btn-primary.next {
+  margin-left: 20%;
+  background-color: #3285e4;
+  margin-bottom: 13px;
+}
+
+.img-arrow {
+  width: 40px;
+  height: 30px;
+  margin-top: 19px;
+}
+
+.register {
+  margin-left: 28%;
+  margin-top: 24px;
+}
+
+.forgot {
+  color: darkgray;
+  margin-left: 29%;
+}
+
+input.btn.btn-primary.next.log {
+  margin-left: 28%;
+}

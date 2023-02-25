@@ -1,8 +1,10 @@
 <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: "form-signin" }) do |f| %>
 <nav class="navbar text-light nav-mobile p-2">
-  <div class="d-flex justify-content-between w-100 align-items-center">
-<%= f.submit "Log in", class: "btn btn-lg btn-primary align-self-between" %>
-  </div>
+  <div class="nav-sign">
+    <a href='/'><img class='img-arrow' src='https://cdn-icons-png.flaticon.com/512/9622/9622757.png'></a>
+    <p class='register'>LOGIN</p>
+    <%= f.submit "Login", class: "btn btn-primary next log " %>
+  </div>>
 </nav>
 
 
@@ -15,19 +17,11 @@
     <%= f.password_field :password, class: "form-control", autocomplete: "current-password", placeholder: 'Password' %>
   </div>
 
-  <% if devise_mapping.rememberable? %>
-    <div class="checkbox mb-3">
-      <label>
-        <%= f.check_box :remember_me %>
-        <%= f.label :remember_me %>
-      </label>
-    </div>
-  <% end %>
-
-  
 <% end %>
 
 <div>
-<%= render "devise/shared/links" %>
+<%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+  <%= link_to "Forgot your password?", new_password_path(resource_name), class: 'forgot' %><br />
+<% end %>
 </div>
 </section>
